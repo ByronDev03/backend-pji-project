@@ -22,7 +22,7 @@ export class CreateCustomerDto
 
   @IsEmail({}, { message: 'El formato de email es inválido' })
   @IsNotEmpty({ message: 'El email es obligatorio' })
-  @MaxLength(10, { message: 'El email no debe superar 100 caracteres' })
+  @MaxLength(100, { message: 'El email no debe superar 100 caracteres' })
   email!: string;
 
   @IsString()

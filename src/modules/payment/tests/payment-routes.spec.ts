@@ -125,11 +125,8 @@ describe('Payment routes', () => {
     // Payload de ejemplo para creación.
     const payload = {
       customer_id: validUuid,
-      amount: 100.5,
-      currency: 'MXN',
+      product_id: validUuid,
       method: 'card',
-      status: 'pending',
-      external_ref: 'REF-123',
     };
 
     // Ejecuta POST con payload.
