@@ -76,7 +76,7 @@ export async function createProduct(req: Request, res: Response)
 
     // Validación mínima de campos obligatorios.
     // Si falta alguno, responde 400 (Bad Request) con mensaje.
-    if (!name || !description) {
+    if (!name || !description || !min_monthly_rent || !max_monthly_rent) {
       return res.status(400).json({
         message: 'name y description son requeridos',
       });
