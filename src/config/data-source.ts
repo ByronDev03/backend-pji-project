@@ -5,7 +5,6 @@ import { Product } from '@/modules/product/product.entity';
 import { Session } from '@/modules/session/session.entity';
 import { Verification } from '@/modules/verification/verification.entity';
 import { Payment } from '@/modules/payment/payment.entity';
-//import { ServicePriceRange } from './entities/ServicePriceRange';
 
 export const AppDataSource = new DataSource(
 {
